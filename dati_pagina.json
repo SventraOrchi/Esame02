@@ -1,0 +1,86 @@
+{
+    "titolo": "G.G. Programmatore",
+    "menu": [
+        {"testo": "Chi sono?", "link": "index.php", "title": "Chi sono"},
+        {"testo": "Portfolio", "link": "prova2.php", "title": "Portfolio"},
+        {"testo": "Contattami", "link": "prova3.php", "title": "Contattami"}
+    ],
+    "descrizione": "Questo sito parla di programmazione, sviluppo, informatica",
+    "testo_chi_sono": "Ciao!<br> Mi chiamo Gabriele e sono un programmatore e uno sviluppatore di siti web.<br> Hai bisogno di un sito per la azienda?<br> Un'app da fare scaricare ai tuoi clienti per tenerli sempre aggiornati?<br> Un sito di E-commerce per la tua attività commerciale?<br> Sono qua per te!<br> Grazie alle mie conoscenze acquisite con l'esperienza sul campo<br> e con il mio percorso all'interno dell'Accademia CODE,<br> sono in grado di creare il sito giusto che fa per te!<br> Se ti ho incuriosito guarda il mio Portfolio<br> per farti un'idea di come lavoro<br> e se vuoi metterti in contatto con me<br> vai nella sezione Contatti!",
+    "cards": [
+        {
+            "id": 1,
+            "titolo": "Unicredit",
+            "descrizione": "Creazione codici di sviluppo per Unicredit",
+            "immagine": "./Immagini/unicredit.png",
+            "data": "2023-05-15",
+            "link": "prova4.php"
+        },
+        {
+            "id": 2,
+            "titolo": "E-commerce",
+            "descrizione": "Consulenza web design per sito e-commerce.",
+            "immagine": "./Immagini/ecommerce.jpg",
+            "data": "2023-07-20",
+            "link": "prova4.php"
+        },
+        {
+            "id": 3,
+            "titolo": "Telecom",
+            "descrizione": "Creazione sito con HTML e CSS per Telecom",
+            "immagine": "./Immagini/Telecom_Italia.png",
+            "data": "2023-10-10",
+            "link": "prova4.php"
+        },
+        {
+            "id": 4,
+            "titolo": "Amazon",
+            "descrizione": "Creazione codici di sviluppo per Amazon",
+            "immagine": "./Immagini/Amazon-Logo-31.png",
+            "data": "2024-01-05",
+            "link": "prova4.php"
+        },
+        {
+            "id": 5,
+            "titolo": "Satispay",
+            "descrizione": "Creazione codici di sviluppo per Satispay",
+            "immagine": "./Immagini/sati.jpeg",
+            "data": "2024-03-15",
+            "link": "prova4.php"
+        },
+        {
+            "id": 6,
+            "titolo": "Netflix",
+            "descrizione": "Creazione sito con HTML e CSS per Netflix",
+            "immagine": "./Immagini/Netflix.png",
+            "data": "2024-05-01",
+            "link": "prova4.php"
+        }
+    ],
+    "footer": {
+        "telefono": "Tel.347121212",
+        "email": "miaemail@gmail.com",
+        "indirizzo": "Giaveno(TO) Strada del ferro XX"
+    },
+    "contatti": [
+        {"nome": "miaemail@gmail.com", "link": "https://www.google.com/intl/it/gmail/about/", "title": "Email"},
+        {"nome": "St.delferro Giaveno(TO)", "link": "https://www.google.it/maps/place/Str.+del+Ferro,+10094+Giaveno+TO/@45.0448372,7.3556068,17z/data=!3m1!4b1!4m6!3m5!1s0x4788381552f458f3:0x9efe6c76acdaee8b!8m2!3d45.0448334!4d7.3581817!16s%2Fg%2F119wd66wd?entry=ttu", "title": "Indirizzo"},
+        {"nome": "Tel.3412121212", "link": "https://www.paginegialle.it", "title": "Telefono"}
+    ],
+    "form": [
+        {"label": "Nome e Cognome:", "type": "text", "id": "name", "name": "name", "required": true},
+        {"label": "Email:", "type": "email", "id": "email", "name": "email", "required": true},
+        {"label": "Messaggio:", "type": "textarea", "id": "message", "name": "message", "rows": 4, "cols": 50, "required": true}
+    ],
+    "paginalavoro": {
+        "titolo": "Descrizione lavoro:",
+        "testo": "Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip<br> ex ea commodo consequat. Duis aute irure dolor in <br>reprehenderit in voluptate velit esse cillum<br> dolore eu fugiat nulla pariatur. Excepteur sint occaecat<br> cupidatat non proident, sunt in culpa qui officia<br> deserunt mollit anim id est laborumsed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in<br> reprehenderit in voluptate velit esse cillum dolore eu fugiat<br> nulla pariatur. Excepteur sint occaecat cupidatat<br> non proident, sunt in culpa qui officia deserunt mollit anim <br>id est laborum.<br><br>",
+        "immagine": "./Immagini/Logo.png",
+        "link": "https://www.amazon.it",
+        "link_text": "Visita il sito!",
+        "link_class": "link-sottolineato",
+        "title": "Link esterno",
+        "target": "_blank",
+        "link_title": "Vai alla pagina di lavoro"
+    }
+}

@@ -1,0 +1,500 @@
+@import "variabili";
+@import "funzioni";
+@import "mixin";
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  color: orange;
+  
+}
+
+.link-sottolineato {
+  text-decoration: underline;
+}
+
+.errore {
+  color: red;
+}
+.descrizione-campo {
+  color: red;
+  font-size: large;
+}
+
+body {
+  font-family: $font-family;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-color: $background-color;
+  opacity: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $text-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.hamburger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#controllo {
+  display: none;
+}
+
+.label-controllo {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav.hamburger-menu {
+  position: relative;
+  color: $text-color;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: x-large;
+}
+
+nav.hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.hamburger-menu li {
+  list-style: none;
+  display: inline;
+  margin: 0 40px 0 0;
+}
+
+nav.hamburger-menu a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav.hamburger-menu a:hover {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+nav.hamburger-menu #controllo {
+  opacity: 0;
+}
+
+header {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  height: 100px;
+  background-color: $footer-bg-color;
+  @include flex-center;
+  background-image: $background-image;
+  border: $form-border;
+}
+
+.lavoro {
+  font-size: calculateRem(30);
+  line-height: 1.5;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  padding: calculateRem(20);
+}
+
+h1 {
+  font-size: calculateRem(60);
+  color: #b15a0e;
+}
+
+.para {
+  font-size: calculateRem(30);
+  line-height: 1.5;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  padding: calculateRem(20);
+  box-shadow: 10px 10px 10px $shadow-color;
+}
+
+p {
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: calculateRem(100);
+}
+
+h2 {
+  font-size: calculateRem(60);
+  color: #b15a0e;
+}
+
+h3 {
+  font-size: calculateRem(60);
+  color: #b15a0e;
+}
+
+.secondapagina {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  text-decoration: none;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: calculateRem(40);
+  margin-top: calculateRem(20);
+  background-color: $secondary-color;
+  box-shadow: 10px 10px 10px $shadow-color;
+}
+
+.card:hover {
+  color: #b15a0e;
+  text-decoration: underline;
+}
+
+.card-content {
+  flex: 1;
+  padding: calculateRem(20);
+  user-select: text;
+}
+
+.imgcard {
+  width: calculateRem(150);
+  margin-left: auto;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+a:hover {
+  color: #b15a0e;
+  text-decoration: underline;
+}
+
+.contatti {
+  font-size: calculateRem(30);
+  line-height: 1.5;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  padding: calculateRem(20);
+  box-shadow: 10px 10px 10px $shadow-color;
+  background-image: $background-image;
+  border: $form-border;
+}
+
+li {
+  list-style-type: none;
+}
+
+form {
+  width: 80%;
+  max-width: calculateRem(400);
+  padding: calculateRem(20);
+  position: relative;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+  color: $text-color;
+  border: $form-border;
+  cursor: pointer;
+  margin-bottom: calculateRem(200);
+  background-image: $background-image;
+}
+
+form:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  border-color: $accent-color;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calculateRem(20);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: calculateRem(8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: calculateRem(10);
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: $secondary-color;
+  color: $text-color;
+  border: none;
+  padding: calculateRem(8) calculateRem(16);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: $accent-color;
+}
+
+.computer {
+  margin-bottom: 10%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: $footer-height;
+  background-color: $footer-bg-color;
+  @include flex-center;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  background-image: $background-image;
+  border: $form-border;
+}
+
+.pfooter {
+  display: inline-block;
+  margin: 0;
+  color: $text-color;
+  font-size: calculateRem(20);
+  line-height: 1.5;
+  padding: calculateRem(10) calculateRem(20);
+}
+
+@media only screen and (max-width: 768px) and (max-width:1024px) {
+  body,
+  main,
+  header,
+  footer {
+    width: 100%;
+  }
+
+  .Immagini img {
+    width: 80%;
+    margin-top: calculateRem(55);
+  }
+
+  header {
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  footer {
+    height: 17vh;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  h1 {
+    font-size: calculateRem(35);
+  }
+
+  .para {
+    font-size: calculateRem(25);
+    line-height: 1.6;
+  }
+
+  .lavoro {
+    padding: calculateRem(15%);
+    margin-bottom: calculateRem(3%);
+    font-size: small;
+  }
+
+  .image {
+    margin-bottom: calculateRem(10%);
+  }
+
+  p {
+    margin-bottom: calculateRem(3%);
+    font-size: small;
+  }
+
+  .secondapagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: calculateRem(10);
+    margin-top: calculateRem(70);
+    width: 100%;
+  }
+
+  .card {
+    width: 95%;
+    height: auto;
+    padding: calculateRem(10);
+    margin: calculateRem(1vh);
+  }
+
+  .card p {
+    font-size: large;
+  }
+
+  .imgcard {
+    width: 40%;
+  }
+
+  .paginalavoro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: calculateRem(10);
+    margin-top: calculateRem(70);
+  }
+
+  form {
+    justify-content: center;
+    margin-bottom: calculateRem(200);
+  }
+
+  .paginaform {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: calculateRem(10);
+    margin-top: calculateRem(70);
+  }
+
+  h3 {
+    font-size: large;
+  }
+
+  section {
+    margin-top: calculateRem(1em);
+    position: static;
+  }
+
+  nav.hamburger-menu .label-controllo {
+    position: absolute;
+    top: calculateRem(-25);
+    right: calculateRem(20);
+    width: calculateRem(26);
+    height: calculateRem(26);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  nav.hamburger-menu .label-controllo > span {
+    position: relative;
+    display: block;
+    width: calculateRem(26);
+    height: calculateRem(2);
+    background-color: #fff;
+  }
+
+  nav.hamburger-menu .label-controllo > span::before,
+  nav.hamburger-menu .label-controllo > span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: calculateRem(2);
+    background-color: #fff;
+    transition-duration: .25s;
+  }
+
+  nav.hamburger-menu .label-controllo > span::before {
+    top: calculateRem(-8);
+    left: 0;
+  }
+
+  nav.hamburger-menu .label-controllo > span::after {
+    bottom: calculateRem(-8);
+    right: 0;
+  }
+
+  nav.hamburger-menu #menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    padding: calculateRem(80) 0;
+    background-color: $secondary-color;
+    box-shadow: calculateRem(2) calculateRem(2) calculateRem(6) rgba(0, 0, 0, 0.4);
+    transition-duration: .25s;
+    background-image: $background-image;
+  }
+
+  nav.hamburger-menu .vociMenu {
+    display: block;
+    padding: calculateRem(12) calculateRem(24);
+    color: $text-color;
+    font-size: calculateRem(1.5rem);
+    font-weight: 600;
+    transition-duration: .25s;
+  }
+
+  nav.hamburger-menu .vociMenu:hover {
+    background-color: $accent-color;
+    color: black;
+  }
+
+  #controllo:checked + .label-controllo > span {
+    transform: rotate(45deg);
+  }
+
+  #controllo:checked + .label-controllo > span::before {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #controllo:checked + .label-controllo > span::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+  }
+
+  #controllo:checked ~ #menu {
+    right: 0 !important;
+  }
+
+  nav.hamburger-menu .label-controllo {
+    right: calculateRem(20);
+    left: auto;
+  }
+
+  nav.hamburger-menu #menu {
+    right: -100%;
+    left: auto;
+  }
+}
